@@ -22,7 +22,7 @@ param
     $UndoPrepareUpgrade = $false,
 
     [Parameter(ParameterSetName='Extra',Mandatory=$false)][switch] 
-    $PrepareUpgrade = $false,
+    $PrepareUpgrade = $true,
 
     # Allow parameter to be passed even if -PrepareUpgrade was passed, but don't make it mandatory.
     [Parameter(Position=0,ParameterSetName='Extra',ValueFromPipeline,ValueFromPipelineByPropertyName)]
